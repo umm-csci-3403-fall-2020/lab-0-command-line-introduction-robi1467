@@ -6,5 +6,5 @@ NUMBER=$1
 FileToTar=NthPrime.tgz
 tar -xzf $FileToTar
 cd NthPrime || exit
-gcc nth_prime.c nth_prime.h main.c -o NthPrime
+gcc nth_prime.c main.c -o NthPrime
 ./NthPrime "$NUMBER"
